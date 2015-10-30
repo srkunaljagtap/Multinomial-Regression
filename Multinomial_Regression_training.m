@@ -3,6 +3,9 @@ function [Weights] = Multinomial_Regression_training(Xtrain, Ltrain,k,maxIter, l
 % Xtrain: trianing samples
 % Ltrain: Labels of the training samples as 1,2,3 .... , k
 % k: total number of classes
+% maxIter: maximum number of iterations for Gradient descent algo.
+% output parameters:
+% Weights: weights of the model after training
 %%
 [N1,L1]= size(Xtrain);
 for i= 1 : k
