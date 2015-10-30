@@ -1,6 +1,12 @@
 
 function [Lpred,Scores] = Multinomial_Regression_testing(Xtest, Weights,k)
-
+%% Input Parameters:
+% Xtest: test samples
+% Weights: weights found from training the model.
+% k: number of classes
+% Output Parameters:
+% Lpred: predicted labels
+% Scores: Posteriors probability of each test sample for all k classes
 % add these fields to output correctpredictions,error,
 Wnew = Weights;
 [N1,L1]= size(Xtest);
