@@ -1,5 +1,10 @@
 function [correctpredictions,error] = MR_missclassfication_error( Lpred, Label)
-
+%% Input parameters
+% Lpred: predicted labels
+% Label: true labels of test samples
+% output paramters:
+% correctpredictions: total correctly predicted test samples
+% error: miscalssification error
 
 L = length(Label);
 L1 = length(Lpred);
